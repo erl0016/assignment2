@@ -10,8 +10,8 @@ public class Finder {
     // Searches a given int array for the largest int value and returns it.
     public int findMax(int[] intArray) {
         int max = 0;
-        if (intArray != null && intArray.length > 0) {
-
+        if (intArray == null || intArray.length < 1) {
+            return Integer.parseInt(null);
         }
 
         return max;
