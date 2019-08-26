@@ -35,6 +35,34 @@ public class Finder_UnitTest {
     // Tests when a null array is passed.
     @Test
     public void findMax_NullArray() {
+        int expected = 0;
+        int actual = _finder.findMax(null);
+        assertEquals(expected, actual);
+    }
 
+    // Tests when a null array is passed.
+    @Test
+    public void findMin_NullArray() {
+        int expected = 0;
+        int actual = _finder.findMin(null);
+        assertEquals(expected, actual);
+    }
+
+    // Tests when an empty array is passed.
+    @Test
+    public void findMax_EmptyArray() {
+        int[] emptyArray = new int[3];
+        int expected = 0;
+        int actual = _finder.findMax(emptyArray);
+        assertEquals(expected, actual);
+    }
+
+    // Tests when an empty array is passed.
+    @Test
+    public void findMin_EmptyArray() {
+        int[] emptyArray = new int[3];
+        int expected = 0;
+        int actual = _finder.findMin(emptyArray);
+        assertEquals(expected, actual);
     }
 }

@@ -13,14 +13,29 @@ public class Finder {
         if (intArray == null || intArray.length < 1) {
             return Integer.parseInt(null);
         }
-
+        else {
+            for (int i = 0; i < intArray.length; i++) {
+                if (max < intArray[i]) {
+                    max = intArray[i];
+                }
+            }
+        }
         return max;
     }
 
     // Searches a given int array for the smallest int value and returns it.
     public int findMin(int[] intArray) {
         int min = 0;
-
+        if (intArray == null || intArray.length < 1) {
+            return Integer.parseInt(null);
+        }
+        else {
+            for (int i = 0; i < intArray.length; i++) {
+                if (min > intArray[i]) {
+                    min = intArray[i];
+                }
+            }
+        }
         return min;
     }
 }
