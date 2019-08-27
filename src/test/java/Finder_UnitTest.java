@@ -16,8 +16,8 @@ public class Finder_UnitTest {
     @Test
     public void findMax_ValidArray() {
         int[] testArray = {5, 0, 12, 8, 2, 15, 7};
-        int expected = 15;
-        int actual = _finder.findMax(testArray);
+        Integer expected = 15;
+        Integer actual = _finder.findMax(testArray);
 
         assertEquals(expected, actual);
     }
@@ -26,8 +26,8 @@ public class Finder_UnitTest {
     @Test
     public void findMin_ValidArray() {
         int[] testArray = {5, 0, 12, 8, 2, 15, 7};
-        int excepted = 0;
-        int actual = _finder.findMin(testArray);
+        Integer excepted = 0;
+        Integer actual = _finder.findMin(testArray);
 
         assertEquals(excepted, actual);
     }
@@ -35,25 +35,23 @@ public class Finder_UnitTest {
     // Tests when a null array is passed.
     @Test
     public void findMax_NullArray() {
-        int expected = 0;
-        int actual = _finder.findMax(null);
-        assertEquals(expected, actual);
+        Integer actual = _finder.findMax(null);
+        assertEquals(null, actual);
     }
 
     // Tests when a null array is passed.
     @Test
     public void findMin_NullArray() {
-        int expected = 0;
-        int actual = _finder.findMin(null);
-        assertEquals(expected, actual);
+        Integer actual = _finder.findMin(null);
+        assertEquals(null, actual);
     }
 
     // Tests when an empty array is passed.
     @Test
     public void findMax_EmptyArray() {
         int[] emptyArray = new int[3];
-        int expected = 0;
-        int actual = _finder.findMax(emptyArray);
+        Integer expected = 0;
+        Integer actual = _finder.findMax(emptyArray);
         assertEquals(expected, actual);
     }
 
@@ -61,8 +59,8 @@ public class Finder_UnitTest {
     @Test
     public void findMin_EmptyArray() {
         int[] emptyArray = new int[3];
-        int expected = 0;
-        int actual = _finder.findMin(emptyArray);
+        Integer expected = 0;
+        Integer actual = _finder.findMin(emptyArray);
         assertEquals(expected, actual);
     }
 }
