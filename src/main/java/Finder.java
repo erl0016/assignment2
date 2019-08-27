@@ -40,6 +40,6 @@ public class Finder {
             }
         }
         min = value;
-        return value;
+        return min;
     }
 }
